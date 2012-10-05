@@ -1,13 +1,14 @@
 <?php
 
 function response($data=null, $err=null) {
-    $resp = array();
-    
-    if ($data)
-        $resp['data'] = $data;
+    $resp = array(
+        'data' => $data
+    );
 
     if ($err)
         $resp['error'] = $err;
+
+    header('Content-Type: application/json; charset=utf-8');
     
     echo json_encode($resp);
 }
@@ -19,7 +20,7 @@ function save($filename) {
     $text = trim($_POST['text']);
 
     if (!file_put_contents($filename, $text))
-        return response(null, 'Writing error.')
+        return response(null, 'Writing error.');
 
     return response($text);
 }
@@ -34,7 +35,7 @@ function call($filename) {
     if (isset($_POST['save']) && $_POST['save'])
         return save($filename);
 
-    if (isset($_GET['retrieve'] && $_GET['retrieve']))
+    if (isset($_GET['retrieve']) && $_GET['retrieve'])
         return retrieve($filename);
 
     return response(null, 'unrecognized action.');

@@ -13,13 +13,13 @@
             <title><?php echo $title; ?></title>
 
             <meta name="robots" content="noindex,nofollow" />
-            <link rel="stylesheet" href="whitepage.css" media="all" />
+            <link rel="stylesheet" href="whitepage.min.css" media="all" />
 
         </head>
         <body>
             <article id="whitepage"></article>
             <script src="jquery-1.8.2.min.js"></script>
-            <script src="whitepage.js"></script>
+            <script src="whitepage.min.js"></script>
         </body>
 </html>
 

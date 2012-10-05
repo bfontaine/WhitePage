@@ -7,7 +7,7 @@ Features
 * Light : the whole app (server code + client code) is ~125ko (jQuery = 73% of
   the app size)
 * All is made with AJAX code, so you never have to reload the page
-* Text is auto-saved every 10 seconds if you modify it
+* Text is auto-saved every 10 seconds if you modified it
 
 Installing
 ----------

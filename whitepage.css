@@ -15,3 +15,36 @@ button {
     font-family:georgia, "Time New Roman", serif;
     line-height:1.2em;
 }
+
+[contenteditable="true"] {
+    outline: 1px solid #999;
+}
+
+[contenteditable="true"]:focus {
+    outline: 1px solid #666;
+}
+
+.notif {
+    position:fixed;
+    top:-500px;
+    left:300px;
+    padding:10px 5px 5px 5px;
+    border:1px solid black;
+    -webkit-border-bottom-left-radius: 5px;
+       -moz-border-bottom-left-radius: 5px;
+        -ms-border-bottom-left-radius: 5px;
+         -o-border-bottom-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+    
+    -webkit-border-bottom-right-radius: 5px;
+       -moz-border-bottom-right-radius: 5px;
+        -ms-border-bottom-right-radius: 5px;
+         -o-border-bottom-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+    width:100px;
+    text-align:center;
+}
+
+.notif.error   { background-color:#FDD; }
+.notif.success { background-color:#DFD; }

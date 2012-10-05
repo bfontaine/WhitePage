@@ -1,0 +1,17 @@
+button {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+         -o-user-select: none;
+            user-select: none;
+}
+
+#whitepage {
+    min-height:100px;
+    min-width:200px;
+    padding:5px 10px;
+
+    font-weight:1.2em;
+    font-family:georgia, "Time New Roman", serif;
+    line-height:1.2em;
+}

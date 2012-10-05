@@ -32,7 +32,7 @@ function retrieve($filename) {
 }
 
 function call($filename) {
-    if (isset($_POST['save']) && $_POST['save'])
+    if (isset($_GET['save']) && $_GET['save'])
         return save($filename);
 
     if (isset($_GET['retrieve']) && $_GET['retrieve'])
